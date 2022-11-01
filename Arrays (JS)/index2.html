@@ -1,0 +1,52 @@
+1. Ədədlərdən ibarət arrayin ən kiçik elementini tapin
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = [40,30,56,10,15];
+        var min = num[0];
+        for (let i=0;i<num.length;i++)
+        {
+        if (num[i] < min)
+        {
+            min = num[i];
+        }
+        }   
+        console.log(min);
+    </script>
+</body>
+</html> 
+
+
+
+2. Ədədlərdən ibarət arrayda neçə rəqəm olduğunu ekrana çap edin (Məs: {1,77,6,14} arrayinda 2 rəqəm var )
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = [ 16, 7, 34, 6, 5, 9, 13, 23 ];
+        var count = 0;
+        for (let i = 0; i < num.length; i++)
+        {
+            num[i] = num[i] / 10;
+            if (num[i] < 1)
+        {
+            count++;
+        }
+        }
+        console.log(count);
+    </script>
+</body>
+</html> 
